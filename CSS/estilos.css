@@ -178,10 +178,28 @@ footer{
         height: 20em;
     }
     .localizacion iframe{
-        width: 30em;
+        width: 25em;
         height: 20em;
     }
     .contenedor{
         font-size: 1.1em;
+    }
+    .acercade p{
+        width: 100%;
+        text-align: justify;
+    }
+    .acercade .acercade1{
+        display: block;
+        text-align: center;
+    }
+    .acercade .acercade1 img{
+        width: 60%;
+    }
+    .consultas .card{
+        width: 80%;
+        margin: auto;
+    }
+    .consultas .card img{
+        height: 15em;
     }
 }
