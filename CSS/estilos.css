@@ -215,14 +215,14 @@ footer a:hover{
         text-align: center;
     }
     .acercade .acercade1 img{
-        width: 60%;
+        width: 90%;
     }
     .consultas .card{
         width: 80%;
         margin: auto;
     }
     .consultas .card img{
-        height: 15em;
+        height: 12em;
     }
     footer{
         display: block;
