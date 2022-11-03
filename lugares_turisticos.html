@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turisticos</title>
+    <link rel="icon" href="IMG/logo_eloro.jpg">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/estilos_lugares.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+</head>
+<body>
+    <nav class="nav bg-light nav1">
+        <div class="container-fluid div1">
+            <img src="IMG/logo_eloro.webp" alt="">
+            <img src="IMG/eloro_pueblomagico.webp" alt="">
+            <img src="IMG/edomex.png" alt="">
+        </div>
+    </nav>
+    <header class="navbar navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarText">
+        <i class="fa fa-home fa-sm"> <a href="index.html">Inicio</a></i>
+        <i class="fa fa-map"> <a href="#">Lugares Turisticos</a></i>
+        <i class="fa fa-bed"> <a href="#">Hospedaje</a></i>
+        <i class="fa fa-cutlery" > <a href="#">Gastronomia</a></i>
+      </div>
+    </header>
+
+    <div id="carrusel_imagenes" class="carousel carousel-light slide carrusel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carrusel_imagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carrusel_imagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carrusel_imagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carrusel_imagenes" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carrusel_imagenes" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner carrusel1">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="IMG/palacio_municipal.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-block d-md-block cols-md-1">
+            <h5>Palacio Municipal</h5>
+            <p class="carousel-caption d-block">Imagen: Secretaria de Cultura y Turismo</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="IMG/museo_mineria.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h5>Museo de Mineria</h5>
+            <p class="carousel-caption d-block">Imagen: Gobierno del Estado de México</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="IMG/presa_brockman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h5>Presa Brockman</h5>
+            <p class="carousel-caption d-block">Imagen: Secretaria de Cultura y Turismo</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="IMG/teatro_juarez.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h5>Teatro Juarez</h5>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="IMG/socavon_sanjuan.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h5>Socavón San Juan</h5>
+            <div class="cita">
+              <p class="carousel-caption d-block">Imagen: Secretaria de Cultura y Turismo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel_imagenes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrusel_imagenes" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img src="IMG/palacio_municipal.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Palacio Municipal</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="boton col-md-1">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUno">
+            Saber Más
+          </button>
+        </div>
+      </div>
+    </div>
+          <!-- Modal Uno -->
+          <div class="modal fade" id="ModalUno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title" id="exampleModalLabel">Palacio Municipal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <p>Texto de ejemplo para el lugar turistico. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus expedita ipsa deserunt fugit voluptate enim, sed ad veniam odio impedit ipsum obcaecati eius pariatur. Fugit dignissimos itaque modi provident nostrum.</p>
+                    </div>
+                    <div class="imagen col-md-3">
+                      <img src="IMG/palacio_municipal.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="secciones row">
+                    <div class="costos col-md-3">
+                      <h5>Costos</h5>
+                      <p>El costo es de $$$</p>
+                    </div>
+                    <div class="horarios col-md-3">
+                      <h5>Horarios</h5>
+                      <p>Lunes a viernes: 9:00 a.m a 21:00 p.m</p>
+                    </div>
+                    <div class="ubicacion col-md-3">
+                      <h5>Ubicación</h5>
+                      <p>Se ubica en ...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img src="IMG/museo_mineria.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Museo de Mineria</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="boton col-md-1">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalDos">
+            Saber Más
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Dos -->
+    <div class="modal fade" id="ModalDos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">Museo de Mineria</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-9">
+                <p>Texto de ejemplo para el lugar turistico. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus expedita ipsa deserunt fugit voluptate enim, sed ad veniam odio impedit ipsum obcaecati eius pariatur. Fugit dignissimos itaque modi provident nostrum.</p>
+              </div>
+              <div class="imagen col-md-3">
+                <img src="IMG/museo_mineria.jpg" alt="">
+              </div>
+            </div>
+            <div class="secciones row">
+              <div class="costos col-md-3">
+                <h5>Costos</h5>
+                <p>El costo es de $$$</p>
+              </div>
+              <div class="horarios col-md-3">
+                <h5>Horarios</h5>
+                <p>Lunes a viernes: 9:00 a.m a 21:00 p.m</p>
+              </div>
+              <div class="ubicacion col-md-3">
+                <h5>Ubicación</h5>
+                <p>Se ubica en ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img src="IMG/teatro_juarez.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Teatro Juarez</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="boton col-md-1">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Saber Más
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img src="IMG/presa_brockman.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Presa Brockman</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="boton col-md-1">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Saber Más
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img src="IMG/socavon_sanjuan.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Socavón San Juan</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="boton col-md-1">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Saber Más
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="anijs-master/dist/anijs-min.js"></script>
+    <script src="anijs-master/dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+</body>
+</html>
