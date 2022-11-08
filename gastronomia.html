@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes</title>
+    <link rel="icon" href="IMG/logo_eloro.jpg">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/estilos_hoteles.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+</head>
+<body>
+
+    <nav class="nav bg-light nav1">
+        <div class="container-fluid div1">
+            <img src="IMG/logo_eloro.webp" alt="">
+            <img src="IMG/eloro_pueblomagico.webp" alt="">
+            <img src="IMG/edomex.png" alt="">
+        </div>
+    </nav>
+    <header class="navbar navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarText">
+        <i class="fa fa-home fa-sm"> <a href="index.html">Inicio</a></i>
+        <i class="fa fa-map"> <a href="lugares_turisticos.html">Lugares Turisticos</a></i>
+        <i class="fa fa-bed"> <a href="hospedaje.html">Hospedaje</a></i>
+        <i class="fa fa-cutlery" > <a href="#">Gastronomia</a></i>
+      </div>
+    </header>
+
+    <div id="carrusel_imagenes" class="carousel carousel-light slide carrusel" data-bs-ride="carousel">
+        <div class="carousel-inner carrusel1">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="IMG/el_roble.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption d-block d-md-block cols-md-1">
+              <h5>Restaurantes</h5>
+              <p class="carousel-caption d-block">Conoce los lugares donde puedes disfrutar de la gastronomia tradicional 
+                del municipio y a los mejores precios.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/vagon_express.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Vagón Express Minero</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUno">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Uno -->
+    <div class="modal fade" id="ModalUno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Vagón Express Minero</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/vagon_express.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/la_ventana.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">La Ventana</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalDos">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Dos -->
+    <div class="modal fade" id="ModalDos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">La Ventana</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/la_ventana.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/el_roble.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">El Roble</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalTres">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Uno -->
+    <div class="modal fade" id="ModalTres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">El Roble</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/el_roble.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/aldea_restaurante.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Aldea Restaurante</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalCinco">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Cinco -->
+    <div class="modal fade" id="ModalCinco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Aldea Restaurante</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/aldea_restaurante.jpeg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/el_recuerdo.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">El Recuerdo</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalSeis">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Seis -->
+    <div class="modal fade" id="ModalSeis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">El Recuerdo</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/el_recuerdo.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/salon_roma.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Salón Roma</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalSiete">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Siete -->
+    <div class="modal fade" id="ModalSiete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Salón Roma</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/salon_roma.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/el_gambusino.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">El Gambusino</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalOcho">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Ocho -->
+    <div class="modal fade" id="ModalOcho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">El Gambusino</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/el_gambusino.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/agave_1621.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Agave 1621</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalNueve">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Nueve -->
+    <div class="modal fade" id="ModalNueve" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Agave 1621</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/agave_1621.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="IMG/kiosco_cafe.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Kiosco Cafe</h5>
+              <p class="card-text">Es un edificio de estilo art nouveau de principios del siglo XX. Es reconocido como un 
+                monumento histórico por el Instituto Nacional de Antropología e Historia (INAH).
+              </p>
+            </div>
+          </div>
+          <div class="boton col-md-1">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalDiez">
+              Saber Más
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal Diez -->
+    <div class="modal fade" id="ModalDiez" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Kiosco Cafe</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Se encuentra ubicado en la boca de la mina "La Providencia", de la cual se extraia oro y plata. Comenzo
+                    su explotación en el siglo XX y dejo de trabajar en 1960. Este lugar resguarda y preserva la historia minera
+                    del municipio por medio de fotografias, documentos y planos, algunos del siglo XVIII. Ademas contiene una 
+                    muestra geológica de los diversos materiales que se extraian, herramientas y maquinaria utilizada.
+                  </p>
+                </div>
+                <div class="imagen col-md-3">
+                  <img src="IMG/kiosco_cafe.jpg" alt="">
+                </div>
+              </div>
+              <div class="secciones row">
+                <div class="costos col-md-3">
+                  <h5>Costos</h5>
+                  <p>La entrada es gratuita a todo el público</p>
+                </div>
+                <div class="horarios col-md-3">
+                  <h5>Horarios</h5>
+                  <p><b>Martes a sabado: </b>10:00 am a 18:00 pm</p>
+                  <p><b>Domingos y dias festivos: </b>10:00 am a 15:00 pm</p>
+                </div>
+                <div class="ubicacion col-md-3">
+                  <h5>Ubicación</h5>
+                  <p>Se encuentra en Quintana Roo S/N esquina Tiro Norte, Col. El Carmen</p>
+                  <div class="boton-ubicacion">
+                    <a href="https://goo.gl/maps/dCG7m3bfAw8WEBSp9" target="_blank">Ver mapa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal">
+        <div class="contacto">
+          <a href="https://es-la.facebook.com/ayuntamientoeloromexico/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+          <a href="http://www.eloromexico.gob.mx/" target="_blank"><i class="fa fa-globe"></i> Pagina H. Ayuntamiento</a>
+        </div>
+        <p>Todos los derechos reservados &copy. H. Ayuntamiento de El Oro. 2022</p>
+      </footer>
+    
+    <script src="anijs-master/dist/anijs-min.js"></script>
+    <script src="anijs-master/dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+</body>
+</html>
