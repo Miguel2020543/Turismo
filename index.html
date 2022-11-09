@@ -14,7 +14,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="CSS/font-awesome.min.css">
-    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 </head>
 <body>
     <nav class="nav bg-light nav1">
@@ -31,8 +31,9 @@
       <div class="collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarText">
         <i class="fa fa-home fa-sm"> <a href="#">Inicio</a></i>
         <i class="fa fa-map"> <a href="lugares_turisticos.html">Lugares Turisticos</a></i>
-        <i class="fa fa-bed"> <a href="#">Hospedaje</a></i>
-        <i class="fa fa-cutlery" > <a href="#">Gastronomia</a></i>
+        <i class="fa fa-bed"> <a href="hospedaje.html">Hospedaje</a></i>
+        <i class="fa fa-cutlery" > <a href="gastronomia.html">Gastronomia</a></i>
+        <!-- <input type="search" placeholder="Buscar . . ." id="inputBusqueda"/> -->
       </div>
     </header>
 
@@ -98,6 +99,14 @@
         </p>
     </div>
 
+        <!-- Busqueda -->
+        <div class="search" id="search">
+          <table class="search-tabla" id="searchTabla">
+            <thead><tr><td></td></tr></thead>
+            <tbody id="tabla"></tbody>
+          </table>
+    </div>
+
     <div class="consultas">
         <h2>¿QUE DESEAS CONSULTAR?</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -112,7 +121,7 @@
             </div>
             <div class="col" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
               <div class="card">
-                <a href="#"><img src="IMG/hotel_gold.webp" class="card-img-top" alt="..."></a>
+                <a href="hospedaje.html"><img src="IMG/hotel_gold.webp" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h5 class="card-title">Hoteles</h5>
                 </div>
@@ -121,7 +130,7 @@
             </div>
             <div class="col" data-anijs="if: scroll, on: window, do: bounceIn animated, before: scrollReveal">
               <div class="card">
-                <a href="#"><img src="IMG/restaurantes.jpg" class="card-img-top" alt="..."></a>
+                <a href="gastronomia.html"><img src="IMG/restaurantes.jpg" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                   <h5 class="card-title">Restaurantes</h5>
                 </div>
@@ -158,7 +167,6 @@
     </div>
 
     <footer data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal">
-      
       <div class="contacto">
         <a href="https://es-la.facebook.com/ayuntamientoeloromexico/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
         <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
@@ -166,6 +174,10 @@
       </div>
       <p>Todos los derechos reservados &copy. H. Ayuntamiento de El Oro. 2022</p>
     </footer>
+    <script src="JS/buscador.js"></script>
+    <script src="JS/DataTables/datatables.min.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/load.js"></script>
     <script src="anijs-master/dist/anijs-min.js"></script>
     <script src="anijs-master/dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 </body>
